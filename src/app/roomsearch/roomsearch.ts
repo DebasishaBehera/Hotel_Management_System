@@ -18,7 +18,7 @@ export class Roomsearch implements OnInit {
   startDate: string | null = null; // Store date as string
   endDate: string | null = null; // Store date as string
   roomType: string = ''; // Selected room type
-  roomTypes: string[] = []; // Available room types
+  roomTypes: string[] = ['SINGLE', 'DOUBLE', 'SUIT', 'TRIPLE']; // Available room types
   error: any = null;
 
   minDate: string = new Date().toISOString().split('T')[0]; // Current date in 'yyyy-MM-dd' format
